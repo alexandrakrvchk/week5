@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    
+    
+    .header,
+    .section,
+    .aside,
+    .footer {
+        border: 1px solid palevioletred;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .main {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+        }
+
+    body {
+            display: flex;
+            flex-flow: column;
+            
+        }
+
+
+    .aside {
+            width: 20vh;
+            display: flex;
+            justify-content: center;
+        }
+
+    .section {
+            flex: 1
+            
+        }
+
+    .flexp0 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .flexp1,
+    .flexp2 {
+        display: inline-flex;
+        border: 1px solid red;
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+
+        .flexp3 {
+        align-self: flex-end;
+        display: flex;
+        border: 1px solid red;
+        justify-content: center;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .flexp4 {
+        border: 1px solid lightcoral;
+        padding: 1%;
+    }
+</style>
+</head>
+<body>
+    <header class="header">
+        <p class="flexp">[Шапка страницы]</p>
+    </header>
+    
+    <main class="main">
+        
+        <section class="section">
+            <p class="flexp0">[Основная часть]</p>
+            <p class="flexp1"> [Еще 1] </p>
+            <p class="flexp2">[Еще 2]</p>
+            <p class="flexp3">[Еще 3]</p>
+        </section>
+        <aside class="aside">[Боковая часть]</aside>
+    </main>
+
+    
+
+    <footer class="footer">
+        <p class="flexp4">[Секция футера 1]</p>
+        <p class="flexp4">[Секция футера 2]</p>
+        <p class="flexp4">[Секция футера 3]</p>
+        <p class="flexp4">[Секция футера 4]</p>
+        
+    </footer>
+</body>
+</html>
